@@ -117,7 +117,7 @@ PRODUCT_PACKAGES += \
     CarrierConfig
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/msm8953_mot_potter_camera.xml:system/etc/camera/msm8953_mot_potter_camera.xml \
+    $(LOCAL_PATH)/configs/camera/msm8953_mot_albus_camera.xml:system/etc/camera/msm8953_mot_albus_camera.xml \
     $(LOCAL_PATH)/configs/camera/mot_ov5695_chromatix.xml:system/etc/camera/mot_ov5695_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/mot_imx362_chromatix.xml:system/etc/camera/mot_imx362_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/mot_s5k2l7_chromatix.xml:system/etc/camera/mot_s5k2l7_chromatix.xml \
@@ -207,7 +207,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service.potter
+    android.hardware.health@2.0-service.albus
 
 # IDC
 PRODUCT_COPY_FILES += \
@@ -247,7 +247,7 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service.potter \
+    android.hardware.light@2.0-service.albus \
     lights.msm8953
 
 # DRM
@@ -338,7 +338,7 @@ PRODUCT_PACKAGES += \
     init.mmi.boot.sh \
     init.mmi.laser.sh \
     init.mmi.rc \
-    init.potter.rc \
+    init.albus.rc \
     init.mmi.usb.rc \
     init.qcom.rc \
     init.qcom.ril.sh
@@ -400,7 +400,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-potter.conf:system/vendor/etc/thermal-engine.conf
+    $(LOCAL_PATH)/configs/thermal-engine-albus.conf:system/vendor/etc/thermal-engine.conf
 
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
@@ -409,7 +409,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.potter
+    android.hardware.usb@1.0-service.albus
 
 # Vibrator
 PRODUCT_PACKAGES += \

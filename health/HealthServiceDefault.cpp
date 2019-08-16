@@ -27,8 +27,8 @@
 #include "CycleCountBackupRestore.h"
 #include "LearnedCapacityBackupRestore.h"
 
-using ::device::motorola::potter::health::CycleCountBackupRestore;
-using ::device::motorola::potter::health::LearnedCapacityBackupRestore;
+using ::device::motorola::albus::health::CycleCountBackupRestore;
+using ::device::motorola::albus::health::LearnedCapacityBackupRestore;
 
 static constexpr int kBackupTrigger = 20;
 

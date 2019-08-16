@@ -1,7 +1,7 @@
 [
   {
     "remote": "github",
-    "repository":  "GZR-Kernels/Optimus_Drunk_Potter",
+    "repository":  "GZR-Kernels/Optimus_Drunk_albus",
     "target_path": "kernel/motorola/msm8953",
     "branch": "9.0-hmp"
   },

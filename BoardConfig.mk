@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
--include vendor/motorola/potter/BoardConfigVendor.mk
+-include vendor/motorola/albus/BoardConfigVendor.mk
 
-DEVICE_PATH := device/motorola/potter
+DEVICE_PATH := device/motorola/albus
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -48,7 +48,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_USES_64_BIT_BINDER := true
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := potter,potter_retail
+TARGET_OTA_ASSERT_DEVICE := albus,albus_retail
 
 # GPS
 TARGET_NO_RPC := true
@@ -56,8 +56,8 @@ USE_DEVICE_SPECIFIC_GPS := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_potter
-TARGET_RECOVERY_DEVICE_MODULES := libinit_potter
+TARGET_INIT_VENDOR_LIB := libinit_albus
+TARGET_RECOVERY_DEVICE_MODULES := libinit_albus
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237
@@ -72,7 +72,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := 9.0.5
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CONFIG := potter_defconfig
+TARGET_KERNEL_CONFIG := albus_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 TARGET_USE_SDCLANG := true
 
