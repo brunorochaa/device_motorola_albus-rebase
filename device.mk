@@ -199,6 +199,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     libgnss \
+    libgnss_shim \
     libgnsspps \
     android.hardware.gnss@1.1-impl-qti \
     android.hardware.gnss@1.1-service-qti \
